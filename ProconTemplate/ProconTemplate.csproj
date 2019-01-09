@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <StartupObject>ProconTemplate.Program</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="test_data\2_in.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="test_data\1_in.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="test_data\1_out.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
